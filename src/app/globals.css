@@ -1,0 +1,181 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   src/app/globals.css — Tiger Yoga Dhyan Kendra Global Styles
+   ─────────────────────────────────────────────────────────────────────────── */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Root Design Tokens ─────────────────────────────────────────────────── */
+:root {
+  --void:    #0B0F0C;
+  --forest:  #1C3B2B;
+  --gold:    #C9A96E;
+  --gold-lt: #E8C87A;
+  --pearl:   #F8F4EE;
+  --ash:     #C8BCA8;
+}
+
+/* ── Base Reset ─────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: auto; /* Lenis owns this */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: var(--void);
+  color: var(--pearl);
+  overflow-x: hidden;
+}
+
+/* ── Lenis Smooth Scroll ─────────────────────────────────────────────────── */
+html.lenis { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+.lenis.lenis-scrolling iframe { pointer-events: none; }
+
+/* ── Custom Scrollbar ────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--void); }
+::-webkit-scrollbar-thumb {
+  background: rgba(201,169,110,0.3);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+
+/* ── Text Selection ──────────────────────────────────────────────────────── */
+::selection { background: rgba(201,169,110,0.22); color: var(--pearl); }
+
+/* ── Focus ───────────────────────────────────────────────────────────────── */
+:focus-visible { outline: 1.5px solid var(--gold); outline-offset: 3px; }
+
+/* ── Reduced Motion ──────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── Navbar Glass ────────────────────────────────────────────────────────── */
+.navbar-transparent {
+  background: transparent;
+  border-bottom: 1px solid transparent;
+}
+.navbar-glass {
+  background: rgba(11,15,12,0.82);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(201,169,110,0.10);
+}
+
+/* ── Gold Button Shimmer ─────────────────────────────────────────────────── */
+@keyframes goldShimmer {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+.btn-gold {
+  background: linear-gradient(135deg, #A07840 0%, #C9A96E 30%, #E8C87A 55%, #D4AF72 75%, #C9A96E 100%);
+  background-size: 250% auto;
+  animation: goldShimmer 5s linear infinite;
+  color: #0B0F0C;
+}
+.btn-gold:hover {
+  filter: brightness(1.12);
+}
+
+/* ── Glass Card ──────────────────────────────────────────────────────────── */
+.glass-card {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.glass-card-gold {
+  background: rgba(201,169,110,0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(201,169,110,0.25);
+}
+@keyframes whatsappPulse {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 0 0 rgba(201,169,110,0.14);
+  }
+  50% {
+    transform: translateY(-1px) scale(1.03);
+    box-shadow: 0 0 0 18px rgba(201,169,110,0.06);
+  }
+}
+
+.whatsapp-float {
+  animation: whatsappPulse 7s ease-in-out infinite;
+}
+
+.whatsapp-icon-glow {
+  filter: drop-shadow(0 0 18px rgba(255,255,255,0.28));
+}
+/* ── Hero Fog ────────────────────────────────────────────────────────────── */
+@keyframes fogDrift {
+  0%   { transform: translateX(-8%) scale(1.08); opacity: 0.20; }
+  50%  { transform: translateX(5%) scale(1.04);  opacity: 0.28; }
+  100% { transform: translateX(-8%) scale(1.08); opacity: 0.20; }
+}
+.hero-fog {
+  animation: fogDrift 28s ease-in-out infinite;
+}
+
+/* ── Reveal helpers (initial hidden state prevents flash) ──────────────── */
+.reveal-word { display: inline-block; will-change: transform, opacity; }
+
+/* ── Section Container ───────────────────────────────────────────────────── */
+.section-container {
+  max-width: 1480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 5vw, 5rem);
+  padding-right: clamp(1.25rem, 5vw, 5rem);
+}
+
+/* ── Gold Divider ────────────────────────────────────────────────────────── */
+.gold-line {
+  width: 3.5rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  transform-origin: center;
+}
+
+/* ── Image Reveal Wrapper ────────────────────────────────────────────────── */
+.img-reveal-wrap { overflow: hidden; }
+
+/* ── Scroll wheel in indicator ───────────────────────────────────────────── */
+@keyframes scrollWheel {
+  0%   { transform: translateY(0); opacity: 1; }
+  60%  { transform: translateY(10px); opacity: 0.15; }
+  100% { transform: translateY(0); opacity: 0; }
+}
+.scroll-wheel { animation: scrollWheel 2.4s ease-in-out infinite; }
+
+/* ── Input / textarea resets ─────────────────────────────────────────────── */
+input, textarea, select {
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+}
+input::placeholder, textarea::placeholder {
+  color: rgba(200,188,168,0.45);
+}
+
+/* ── Form field focus gold underline ─────────────────────────────────────── */
+.field-border {
+  border-bottom: 1px solid rgba(200,188,168,0.25);
+  transition: border-color 0.3s ease;
+}
+.field-border:focus-within {
+  border-color: var(--gold);
+}
