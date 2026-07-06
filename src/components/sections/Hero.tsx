@@ -153,8 +153,8 @@ export default function Hero() {
       ref={sectionRef}
       id="hero"
       aria-label="Tiger Yoga Dhyan Kendra — Hero"
-      className="relative w-full overflow-hidden"
-      style={{ height: '100svh', minHeight: '600px', background: '#0A0F0C' }}
+      className="relative w-full overflow-hidden h-[100svh] min-h-[420px] sm:min-h-[520px] md:min-h-[600px]"
+        style={{ background: '#0A0F0C' }}
     >
 
       {/* ══════════════════════════════════════════════════════════
@@ -235,12 +235,7 @@ export default function Hero() {
       >
         <div
           ref={contentRef}
-          className="will-change-transform w-full"
-          style={{
-            maxWidth: '780px',
-            paddingLeft: 'clamp(1.5rem, 7vw, 8.5rem)',
-            paddingRight: 'clamp(1.5rem, 4vw, 5rem)',
-          }}
+          className="will-change-transform w-full max-w-[780px] px-4 sm:px-6 md:pl-14 md:pr-10 lg:pl-20"
         >
 
           {/* Eyebrow */}
@@ -333,7 +328,7 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div
             ref={btnsRef}
-            className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4 mb-8 sm:mb-10"
+            className="flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-4 mb-8 sm:mb-10"
           >
             {/* Primary — gold */}
             <a
@@ -366,7 +361,7 @@ export default function Hero() {
           {/* Footnote */}
           <p
             ref={footnoteRef}
-            className="font-body tracking-luxury uppercase"
+            className="font-body tracking-luxury uppercase text-center sm:text-left"
             style={{ fontSize: '8.5px', color: 'rgba(248,244,238,0.20)', letterSpacing: '0.20em' }}
           >
             At the edge of Corbett Tiger Reserve&nbsp;·&nbsp;Laldhang, Uttarakhand

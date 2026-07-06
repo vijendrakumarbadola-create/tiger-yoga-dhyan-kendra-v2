@@ -206,7 +206,7 @@ export default function Packages() {
           />
         </div>
 
-        <div className="grid md:grid-cols-3 gap-4 sm:gap-5 items-start">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-5 items-stretch">
           {PACKAGES.map((pkg, i) => (
             <PackageCard key={pkg.name} pkg={pkg} index={i} />
           ))}

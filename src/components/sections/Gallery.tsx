@@ -73,7 +73,7 @@ export default function Gallery() {
           <SectionTitle eyebrow="The World of Tiger Yoga" heading="A life lived at nature's pace." align="center" />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4"
-          style={{ gridAutoRows: '260px' }}>
+          style={{ gridAutoRows: 'minmax(220px, 1fr)' }}>
           {ITEMS.map((item, i) => <GalleryImg key={item.src} item={item} index={i} />)}
         </div>
         <p className="font-body text-[11px] tracking-wide text-pearl/25 text-center mt-10">

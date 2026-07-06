@@ -38,6 +38,9 @@ export default function ParticleCanvas() {
     const ctx = canvas.getContext('2d')
     if (!ctx) return
 
+    // Skip particle rendering on small screens for performance
+    if (window.matchMedia && window.matchMedia('(max-width: 640px)').matches) return
+
     let raf: number
     let particles: Particle[] = []
     let wind = 0
