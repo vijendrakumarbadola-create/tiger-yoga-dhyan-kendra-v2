@@ -109,8 +109,8 @@ export default function Navbar() {
           is positioned relative to this box.
         */}
         <div
-          className="relative flex items-center h-full w-full mx-auto"
-          style={{ maxWidth: '1600px', paddingLeft: 'clamp(1.25rem, 4vw, 3.5rem)', paddingRight: 'clamp(1.25rem, 4vw, 3.5rem)' }}
+          className="relative flex items-center h-full w-full mx-auto px-4 sm:px-6 md:px-10"
+          style={{ maxWidth: '1600px' }}
         >
 
           {/* ── LOGO — left ──────────────────────────────────── */}
