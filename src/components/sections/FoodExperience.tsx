@@ -77,7 +77,7 @@ export default function FoodExperience() {
       ref={sectionRef}
       id="food"
       aria-label="Farm to Table Dining"
-      className="relative min-h-[90vh] flex items-center overflow-hidden"
+      className="relative min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] flex items-center overflow-hidden"
       style={{ background: '#0B0F0C' }}
     >
       {/* ── Full-bleed background image ──────────────────────────── */}

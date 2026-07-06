@@ -149,7 +149,7 @@ export default function AboutRetreats() {
       className="relative overflow-hidden"
       style={{ background: '#0B0F0C' }}
     >
-      <div className="grid md:grid-cols-2 min-h-screen md:min-h-0">
+      <div className="grid md:grid-cols-2 md:min-h-0">
 
         {/* ── LEFT: full-height image ─────────────────────────── */}
         <div

@@ -235,7 +235,7 @@ export default function Hero() {
       >
         <div
           ref={contentRef}
-          className="will-change-transform w-full max-w-[780px] px-4 sm:px-6 md:pl-14 md:pr-10 lg:pl-20"
+          className="will-change-transform w-full max-w-[780px] px-4 sm:px-6 md:px-10 text-center sm:text-left"
         >
 
           {/* Eyebrow */}
@@ -328,23 +328,22 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div
             ref={btnsRef}
-            className="flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-4 mb-8 sm:mb-10"
+            className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-3 sm:gap-4 mb-8 sm:mb-10"
           >
             {/* Primary — gold */}
             <a
               href="#contact"
-              className="inline-flex items-center justify-center rounded-[2px] font-body tracking-luxury uppercase font-semibold text-void btn-gold transition-transform duration-200 hover:scale-[1.04] active:scale-[0.97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-              style={{ fontSize: '10px', padding: '14px 36px' }}
+              className="inline-flex w-full sm:w-auto items-center justify-center rounded-[2px] font-body tracking-luxury uppercase font-semibold text-void btn-gold transition-transform duration-200 hover:scale-[1.04] active:scale-[0.97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 px-4 py-3 sm:px-9 sm:py-4"
+              style={{ fontSize: '10px' }}
             >
               Book Your Stay
             </a>
             {/* Secondary — ghost */}
             <a
               href="#packages"
-              className="group inline-flex items-center gap-2 rounded-[2px] font-body tracking-luxury uppercase font-medium text-pearl/75 hover:text-pearl transition-all duration-300 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+              className="group inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-[2px] font-body tracking-luxury uppercase font-medium text-pearl/75 hover:text-pearl transition-all duration-300 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 px-4 py-3 sm:px-9 sm:py-4"
               style={{
                 fontSize: '10px',
-                padding: '14px 36px',
                 border: '1px solid rgba(248,244,238,0.28)',
               }}
               onMouseEnter={e => (e.currentTarget.style.borderColor = 'rgba(248,244,238,0.58)')}

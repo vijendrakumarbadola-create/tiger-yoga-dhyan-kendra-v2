@@ -70,11 +70,10 @@ function BookBtn({ compact = false }: { compact?: boolean }) {
       href={WHATSAPP_BOOK_URL}
       target="_blank"
       rel="noreferrer noopener"
-      className="inline-flex items-center justify-center rounded-[2px] font-body uppercase font-semibold text-void btn-gold transition-transform duration-200 hover:scale-[1.04] active:scale-[0.97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+      className="inline-flex items-center justify-center rounded-[2px] font-body uppercase font-semibold text-void btn-gold transition-transform duration-200 hover:scale-[1.04] active:scale-[0.97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 px-4 py-3 sm:px-5 sm:py-3 min-w-[110px]"
       style={{
         fontSize: compact ? '9px' : '9.5px',
         letterSpacing: '0.18em',
-        padding: compact ? '7px 14px' : '9px 20px',
         whiteSpace: 'nowrap',
       }}
     >

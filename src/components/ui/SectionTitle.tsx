@@ -50,7 +50,7 @@ export default function SectionTitle({
       <h2
         className={`
           font-display font-light text-pearl leading-[1.08]
-          text-[36px] sm:text-[48px] md:text-[56px] lg:text-[64px]
+          text-[28px] sm:text-[36px] md:text-[56px] lg:text-[64px]
           max-w-3xl mb-5 sm:mb-6
           ${centred ? 'mx-auto' : ''}
         `}

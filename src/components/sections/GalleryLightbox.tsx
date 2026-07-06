@@ -305,7 +305,7 @@ export default function GalleryLightbox() {
           */}
           <div
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4"
-            style={{ gridAutoRows: '260px' }}
+            style={{ gridAutoRows: 'minmax(220px, 1fr)' }}
           >
             {IMAGES.map((item, i) => (
               <GalleryItem key={item.src} item={item} index={i} onOpen={open} />
