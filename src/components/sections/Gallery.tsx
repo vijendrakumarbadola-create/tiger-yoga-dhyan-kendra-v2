@@ -70,14 +70,14 @@ export default function Gallery() {
       className="relative py-24 sm:py-32 md:py-40" style={{ background: '#111815' }}>
       <div className="section-container">
         <div ref={headingRef} className="mb-12 sm:mb-16">
-          <SectionTitle eyebrow="The World of Tiger Yoga" heading="A life lived at nature's pace." align="center" />
+          <SectionTitle eyebrow="The World of Tiger Yoga" heading="A life lived at nature&apos;s pace." align="center" />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4"
           style={{ gridAutoRows: 'minmax(220px, 1fr)' }}>
           {ITEMS.map((item, i) => <GalleryImg key={item.src} item={item} index={i} />)}
         </div>
         <p className="font-body text-[11px] tracking-wide text-pearl/25 text-center mt-10">
-          Laldhang, Uttarakhand — where Jim Corbett's forests begin.
+          Laldhang, Uttarakhand — where Jim Corbett&apos;s forests begin.
         </p>
       </div>
     </section>

@@ -84,8 +84,8 @@ export default function About() {
               className="font-display italic font-light leading-[1.3] mb-8 sm:mb-10"
               style={{ color: '#C9A96E', fontSize: 'clamp(1.4rem, 3vw, 2rem)', borderLeft: '2px solid rgba(201,169,110,0.30)', paddingLeft: '1.5rem' }}
             >
-              "Silence is not the absence of sound. It is the presence of everything
-              that matters — the forest, the breath, the moment."
+              &ldquo;Silence is not the absence of sound. It is the presence of everything
+              that matters — the forest, the breath, the moment.&rdquo;
             </blockquote>
 
             <div ref={textRef} className="flex flex-col gap-5">

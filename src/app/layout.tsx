@@ -54,14 +54,14 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
   },
-  metadataBase: new URL('https://tigerdhyankendra.in'),
-  themeColor: '#0B0F0C',
+  metadataBase: new URL('https://www.tigerdhyankendra.in'),
 }
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
+  themeColor: '#0B0F0C',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -93,15 +93,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               {
                 "@type": "Organization",
                 "name": "Tiger Yoga Dhyan Kendra",
-                "url": "https://tigerdhyankendra.in",
+                "url": "https://www.tigerdhyankendra.in",
                 "logo": "https://tigerdhyankendra.in/logo.png"
               },
               {
                 "@type": "LocalBusiness",
                 "name": "Tiger Yoga Dhyan Kendra",
                 "image": ["https://tigerdhyankendra.in/cottage-1.jpeg"],
-                "@id": "https://tigerdhyankendra.in",
-                "url": "https://tigerdhyankendra.in",
+                "@id": "https://www.tigerdhyankendra.in",
+                "url": "https://www.tigerdhyankendra.in",
                 "telephone": "+91 78954 28914",
                 "address": {
                   "@type": "PostalAddress",
@@ -117,15 +117,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               {
                 "@type": "LodgingBusiness",
                 "name": "Tiger Yoga Dhyan Kendra",
-                "url": "https://tigerdhyankendra.in",
+                "url": "https://www.tigerdhyankendra.in",
                 "telephone": "+91 78954 28914",
                 "address": { "@type": "PostalAddress", "streetAddress": "Laldhang Road, Pathari Forest Range", "addressLocality": "Laldhang", "addressRegion": "Uttarakhand", "postalCode": "249408", "addressCountry": "IN" }
               },
               {
                 "@type": "WebSite",
-                "url": "https://tigerdhyankendra.in",
+                "url": "https://www.tigerdhyankendra.in",
                 "name": "Tiger Yoga Dhyan Kendra",
-                "publisher": { "@id": "https://tigerdhyankendra.in" }
+                "publisher": { "@id": "https://www.tigerdhyankendra.in" }
               }
             ]
           }) }}

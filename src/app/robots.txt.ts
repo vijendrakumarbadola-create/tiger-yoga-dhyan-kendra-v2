@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server'
 const ROBOTS = `User-agent: *
 Allow: /
 
-Sitemap: https://tigerdhyankendra.in/sitemap.xml
+Sitemap: https://www.tigerdhyankendra.in/sitemap.xml
 `
 
 export function GET() {

@@ -208,7 +208,7 @@ export default function AboutRetreats() {
               the sal forests and paddy fields of Laldhang, Uttarakhand — at
               the very edge of Jim Corbett National Park. We believe the
               deepest healing comes not from a spa, but from standing barefoot
-              in forest soil at dawn, breathing air that hasn't been filtered
+              in forest soil at dawn, breathing air that hasn&apos;t been filtered
               by a city.
             </p>
 
